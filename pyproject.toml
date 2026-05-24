@@ -1,0 +1,16 @@
+[project]
+name = "constellation-timeslice-scheduler"
+version = "0.1.0"
+description = "Toy time-slice scheduler for constellation downlink and inter-satellite resource allocation."
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+qiskit = [
+  "qiskit>=1.2,<2.0",
+  "qiskit-aer>=0.14,<0.16",
+]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
